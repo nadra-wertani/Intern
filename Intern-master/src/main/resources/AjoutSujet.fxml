@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="414.0" prefWidth="374.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AjoutSujet">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="402.0" prefWidth="383.0">
+         <effect>
+            <Glow />
+         </effect>
+         <children>
+            <ButtonBar layoutX="183.0" layoutY="364.0" prefHeight="40.0" prefWidth="200.0" />
+            <Accordion layoutX="82.0" layoutY="93.0" />
+            <Accordion layoutX="99.0" layoutY="81.0" />
+            <AnchorPane layoutX="59.0" layoutY="24.0" prefHeight="40.0" prefWidth="265.0" style="-fx-background-color: #4682B4;">
+               <Label layoutX="64.0" layoutY="5.0" text="Ajouter sujet stage" textFill="#e1dfdf">
+                  <font>
+                     <Font name="System Bold Italic" size="18.0" />
+                  </font>
+               </Label>
+            </AnchorPane>
+            <Label layoutX="76.0" layoutY="101.0" text="sujet" />
+            <TextField fx:id="tfsujet" layoutX="133.0" layoutY="97.0" promptText="sujet" />
+            <Label layoutX="61.0" layoutY="144.0" text="decription" />
+            <Label layoutX="55.0" layoutY="185.0" text="technologies" />
+            <Label layoutX="55.0" layoutY="227.0" text="periode" />
+            <TextField fx:id="tfdescreption" layoutX="133.0" layoutY="140.0" promptText="description" />
+            <TextField fx:id="tftechnologies" layoutX="133.0" layoutY="181.0" promptText="technologies" />
+            <TextField fx:id="tfperiode" layoutX="133.0" layoutY="223.0" promptText="periode" />
+            <Button fx:id="enregistrebouton" layoutX="115.0" layoutY="332.0" mnemonicParsing="false" onAction="#enregistraadd" style="-fx-background-color: #1E90FF;" text="Enregistrer" textFill="#b5b5bf">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="annulerbouton" layoutX="236.0" layoutY="332.0" mnemonicParsing="false" onAction="#annuleradd" text="annuler" textFill="#d90f0f">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Button>
+            <TextField fx:id="catalog_nametf" layoutX="132.0" layoutY="257.0" promptText="catalog_name" />
+            <TextField fx:id="usertf" layoutX="132.0" layoutY="291.0" promptText="user_name" />
+            <Label layoutX="45.0" layoutY="261.0" text="catalog_name" />
+            <Label layoutX="68.0" layoutY="295.0" text="user_name" />
+
+         </children>
+      </AnchorPane>s
+   </children>
+</AnchorPane>

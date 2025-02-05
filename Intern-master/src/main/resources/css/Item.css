@@ -1,0 +1,24 @@
+.label {
+    -fx-font-size: 14px;
+    -fx-text-fill: black;
+}
+
+#sujetlab {
+    -fx-font-weight: bold;
+}
+
+#techlab {
+    -fx-font-style: italic;
+}
+
+#periodelab {
+    -fx-text-fill: #0077cc; /* Couleur bleue */
+}
+
+#desclab {
+    -fx-font-size: 12px;
+    -fx-text-fill: #333333; /* Couleur gris foncé */
+}
+
+
+
